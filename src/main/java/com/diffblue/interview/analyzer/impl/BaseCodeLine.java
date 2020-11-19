@@ -20,7 +20,7 @@ public final class BaseCodeLine implements CodeLine {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public int getLineNumber() {
@@ -28,7 +28,7 @@ public final class BaseCodeLine implements CodeLine {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public String getContents() {

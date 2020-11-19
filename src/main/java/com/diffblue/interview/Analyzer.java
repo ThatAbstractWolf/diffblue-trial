@@ -86,7 +86,7 @@ public class Analyzer implements CodeAnalyzer {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public Set<CodeLine> runTest(CodeTest test) {
@@ -95,7 +95,7 @@ public class Analyzer implements CodeAnalyzer {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public LinkedHashSet<CodeLine> runTestSuite(Set<CodeTest> tests) {
@@ -106,7 +106,7 @@ public class Analyzer implements CodeAnalyzer {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public Set<CodeTest> uniqueTests(Set<CodeTest> tests) {
@@ -126,14 +126,14 @@ public class Analyzer implements CodeAnalyzer {
 
             uniqueHashes.put(test, hash);
         });
-        
+
         // Unique tests
         System.out.println(uniqueTests.size());
         return uniqueTests;
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public CodeClass getCodeClass() {
@@ -141,7 +141,7 @@ public class Analyzer implements CodeAnalyzer {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public Set<CodeTest> getCodeTests() {

@@ -24,7 +24,7 @@ public final class BaseCodeClass implements CodeClass {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public List<CodeLine> getLinesOfCode() {
@@ -32,7 +32,7 @@ public final class BaseCodeClass implements CodeClass {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public File getFile() {

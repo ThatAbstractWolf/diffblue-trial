@@ -24,7 +24,7 @@ public final class BaseCodeTest implements CodeTest {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public String getName() {
@@ -32,7 +32,7 @@ public final class BaseCodeTest implements CodeTest {
     }
 
     /**
-     * @inheritDocs
+     * {@inheritDoc}
      */
     @Override
     public LinkedHashSet<CodeLine> getCoveredLines() {

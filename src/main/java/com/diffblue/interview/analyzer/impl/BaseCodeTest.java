@@ -4,7 +4,6 @@ import com.diffblue.interview.analyzer.CodeLine;
 import com.diffblue.interview.analyzer.CodeTest;
 
 import java.util.LinkedHashSet;
-import java.util.Set;
 
 public final class BaseCodeTest implements CodeTest {
 

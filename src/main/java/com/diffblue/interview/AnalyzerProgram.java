@@ -7,13 +7,13 @@ import java.io.File;
 import java.util.Set;
 
 /**
- * Initial class to start the program up.
+ * Initial class to start the program up
  */
 public class AnalyzerProgram {
 
     /**
-     * Main method used to boot the Java program.
-     * @param args - arguments.
+     * Main method used to boot the Java program
+     * @param args - arguments
      */
     public static void main(String[] args) {
 

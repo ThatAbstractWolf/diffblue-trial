@@ -27,15 +27,15 @@ import java.util.stream.Collectors;
  */
 public class Analyzer implements CodeAnalyzer {
 
-    /** This is the {@link CodeClass} being ran by the analyzer. */
+    /** This is the {@link CodeClass} being ran by the analyzer */
     private CodeClass codeClass;
 
-    /** Code tests built for this specific Java source file. */
+    /** Code tests built for this specific Java source file */
     private final Set<CodeTest> codeTests;
 
     /**
      * Create a new instance of {@link Analyzer}
-     * @param file - the Java source file.
+     * @param file - the Java source file
      */
     public Analyzer(File file) {
 

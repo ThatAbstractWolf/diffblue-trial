@@ -4,7 +4,6 @@ import com.diffblue.interview.analyzer.impl.BaseCodeLine;
 import com.diffblue.interview.analyzer.CodeClass;
 import com.diffblue.interview.analyzer.CodeLine;
 import com.diffblue.interview.analyzer.CodeTest;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 
@@ -14,7 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Utility used for most test methods and being able to accurately pull data without code replication.+
+ * Utility used for most test methods and being able to accurately pull data without code replication
  */
 public class TestUtil {
 
@@ -22,8 +21,8 @@ public class TestUtil {
     private final static Pattern METHOD_PATTERN = Pattern.compile("(?:(?:public|private|protected|static|final|native|synchronized|abstract|transient)+\\s+)+[$_\\w<>\\[\\]\\s]*\\s+[\\$_\\w]+\\([^\\)]*\\)?\\s*\\{?([^\\}]*)\\}?", Pattern.MULTILINE);
 
     /**
-     * @param clazz - clazz.
-     * @return Get the lines from each method in a specific class.
+     * @param clazz - clazz
+     * @return Get the lines from each method in a specific class
      */
     public static Map<Integer, LinkedHashSet<CodeLine>> getMethodLines(CodeClass clazz) {
 
@@ -58,8 +57,8 @@ public class TestUtil {
     }
 
     /**
-     * @param clazz - clazz.
-     * @return Reconstruct the class based on the lines present.
+     * @param clazz - clazz
+     * @return Reconstruct the class based on the lines present
      */
     private static String getFullClass(CodeClass clazz) {
         StringBuilder clazzBuilder = new StringBuilder();
@@ -69,8 +68,8 @@ public class TestUtil {
     }
 
     /**
-     * @param clazz - clazz.
-     * @return Reconstruct the class based on the lines present.
+     * @param clazz - clazz
+     * @return Reconstruct the class based on the lines present
      */
     public static String getFullTest(CodeTest clazz) {
         StringBuilder clazzBuilder = new StringBuilder();
@@ -80,9 +79,9 @@ public class TestUtil {
     }
 
     /**
-     * @param lines - lines in this set.
-     * @param line - line that is being looked for.
-     * @return Get key from a map by its value.
+     * @param lines - lines in this set
+     * @param line - line that is being looked for
+     * @return Get key from a map by its value
      */
     private static int getLineNumberByLine(List<CodeLine> lines, String line) {
         // Get the line number by finding first instance, this may need to be tweaked once it has been reviewed to find it by method rather
@@ -94,7 +93,7 @@ public class TestUtil {
     /**
      * @param tests - tests
      * @param line - line
-     * @return Is a line that is being tested.
+     * @return Is a line that is being tested
      */
     public static CodeTest isTestedLine(Set<CodeTest> tests, CodeLine line) {
         // Loop through each code test that has been generated for this source file.

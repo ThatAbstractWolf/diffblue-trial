@@ -7,15 +7,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
- * A class inheriting {@link ClassLoader} used to convert bytes to a class.
+ * A class inheriting {@link ClassLoader} used to convert bytes to a class
  *
- * I have kept this in to explain the first approach I took to this problem.
+ * I have kept this in to explain the first approach I took to this problem
  */
 public final class ByteClassLoader extends ClassLoader {
 
     /**
-     * Define a class by its name and the bytes relevant to it.
-     * @param file - file.
+     * Define a class by its name and the bytes relevant to it
+     * @param file - file
      * @return Class
      */
     public final Class<?> defineClass(File file) {
@@ -56,8 +56,8 @@ public final class ByteClassLoader extends ClassLoader {
 
     /**
      * Get the package if not defined by the user already?
-     * @param error - error message thrown that shows the correct package.
-     * @return package declaration.
+     * @param error - error message thrown that shows the correct package
+     * @return package declaration
      */
     private String getClassPackage(String error) {
 

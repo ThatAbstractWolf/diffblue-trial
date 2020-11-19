@@ -128,7 +128,6 @@ public class Analyzer implements CodeAnalyzer {
         });
 
         // Unique tests
-        System.out.println(uniqueTests.size());
         return uniqueTests;
     }
 

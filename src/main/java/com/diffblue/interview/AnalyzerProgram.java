@@ -63,7 +63,7 @@ public class AnalyzerProgram {
         System.out.println(" ");
 
         System.out.println("=================[ Unique Tests ]=================");
-        uniqueTestSet.forEach(uniqueTest -> System.out.println("Unique test \"" + uniqueTest.getName() + "\" has " + uniqueTest.getCoveredLines().size() + " lines."));
+        uniqueTestSet.forEach(uniqueTest -> System.out.printf("Unique test \"%s\" has %s lines.\n", uniqueTest.getName(), uniqueTest.getCoveredLines().size()));
         System.out.println("=================[ Unique Tests ]=================");
     }
 }
